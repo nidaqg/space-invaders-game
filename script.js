@@ -135,8 +135,8 @@ function shoot (e) {
     }
 
 
-    switch(e.key) {
-        case 'ArrowUp':
+    switch(e.keyCode) {
+        case 32:
             laserId = setInterval(moveLaser, 100)
 
     }
