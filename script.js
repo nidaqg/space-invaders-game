@@ -91,6 +91,7 @@ function moveInvaders () {
 if (squares[currentShooterIndex].classList.contains('invader', 'shooter')) {
     resultsDisplay.innerHTML = "Game Over"
     clearInterval(invadersId)
+
 }
 
 for(let i=0; i<alienInvaders.length; i++) {
