@@ -1,5 +1,6 @@
-const grid = document.querySelector('.grid')
-const resultsDisplay = document.querySelector('.results')
+const grid = document.querySelector('.grid');
+const retryBtn = document.querySelector('.btn');
+const resultsDisplay = document.querySelector('.results');
 let currentShooterIndex =202;
 let width = 15;
 let direction = 1;
@@ -144,3 +145,12 @@ function shoot (e) {
 }
 
 document.addEventListener('keydown', shoot)
+
+retryBtn.addEventListener('click', retry)
+
+function retry (e) {
+  e.preventDefault();
+  location.reload();
+
+}
+
